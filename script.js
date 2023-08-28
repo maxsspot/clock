@@ -144,9 +144,9 @@ dayNumberText.innerHTML = dayNumber + ",";
 yearText.innerHTML = year;
 
 if (hours < 11) {
-    document.title = hours + ":" + minutes + ":" + seconds + "AM";
+    document.title = hours + ":" + minutes + ":" + seconds + " AM";
 } else {
-    document.title = hours-12 + ":" + minutes + ":" + seconds + "PM";
+    document.title = hours-12 + ":" + minutes + ":" + seconds + " PM";
 }
     
 }, 1);

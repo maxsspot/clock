@@ -143,7 +143,12 @@ switch (month) {
 dayNumberText.innerHTML = dayNumber + ",";
 yearText.innerHTML = year;
 
-document.title = hours + ":" + minutes + ":" + seconds;
+if (hours < 11) {
+    document.title = hours + ":" + minutes + ":" + seconds + "AM";
+} else {
+    document.title = hours-12 + ":" + minutes + ":" + seconds + "PM";
+}
+    
 }, 1);
 
 ///////////////////

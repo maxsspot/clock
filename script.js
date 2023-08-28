@@ -20,18 +20,6 @@ var dayNumber = currentDate.getDate();
 var dayNumberText = document.getElementById("daynumber");
 
 ////////////////////
-    
-var targetDate = document.getElementById ("date");
-var difference = targetDate - currentDate;
-
-var daysUntil = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
-var hoursUntil = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-var minutesUntil = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
-var secondsUntil = Math.floor((timeDifference % (1000 * 60)) / 1000);
-var overallUntil = daysUntil + hoursUntil + minutesUntil + secondsUntil;
-    
-localStorage.setItem ("overallUntil",daysUntil);
-localStorage.setItem ("countdownExists","true");
 ///////////////////
 
 if (seconds < 10) {
@@ -188,4 +176,18 @@ function closeUI () {
     document.getElementById ("ui").style.top = "0px";
     document.getElementById ("ui").style.opacity = "0";
     document.getElementById ("ui").style.pointerEvents = "none";
+}
+
+function createTimer () {
+    var targetDate = document.getElementById ("date");
+    var difference = targetDate - currentDate;
+
+    var daysUntil = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+    var hoursUntil = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutesUntil = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+    var secondsUntil = Math.floor((timeDifference % (1000 * 60)) / 1000);
+    var overallUntil = daysUntil + hoursUntil + minutesUntil + secondsUntil;
+    
+    localStorage.setItem ("overallUntil",daysUntil);
+    localStorage.setItem ("countdownExists","true");
 }

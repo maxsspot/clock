@@ -1,0 +1,117 @@
+* {
+    margin:0;
+    padding:0;    
+}
+
+body {
+	text-align:center;
+    font-size:30px;
+    background-color:black;
+    color:white;
+    font-family:"Nunito Sans", sans-serif;
+}
+
+h4 {
+    display:inline-block;
+    margin:5px;
+}
+
+footer {
+    background-color:rgb(30, 30, 30);
+    height:75px;
+    position:fixed;
+    width:100%;
+    bottom:0;
+}
+
+button {
+    cursor:pointer;
+    transition:all 0.25s;
+}
+
+#button {
+    color:white;
+    border:white solid 1px;
+    width:150px;
+    background-color:transparent;
+    border-radius:30px;
+    height:40px;
+    margin-top:17.5px;
+}
+
+#button:hover {
+    color:black;
+    background-color:white;
+}
+
+#button:active {
+    transform:scale(0.95);
+}
+
+#ui {
+    background-color:rgb(50, 50, 50);
+    position:fixed;
+    border-radius:10px;
+    width:300px;
+    left:50%;
+    top:10px;
+    transform: translateX(-50%);
+    transition:all 0.25s;
+    pointer-events:none;
+    opacity:0;
+}
+
+input {
+    width:100px;
+    height:30px;
+    background-color:transparent;
+    border:transparent;
+    border-bottom:white solid 1px;
+    outline:none;
+    color:white;
+}
+
+#title {
+    width:205px;
+}
+
+#close {
+    width:35px;
+    height:35px;
+    float:left;
+    border-radius:10px;
+    font-size:24px;
+    color:white;
+    background-color:transparent;
+    border:transparent;
+}
+
+#close:hover {
+    background-color:red;
+}
+
+#close:active {
+    background-color:darkred;
+}
+
+label {
+    font-size:18px;
+}
+
+#yes {
+    width:150px;
+    height:40px;
+    background-color:transparent;
+    border:white solid 1px;
+    border-radius:30px;
+    color:white;
+}
+
+#yes:hover {
+    color:black;
+    background-color:white;
+}
+
+#yes:active {
+    transform:scale(0.95);
+}

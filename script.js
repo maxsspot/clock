@@ -195,6 +195,6 @@ function createTimer () {
     localStorage.setItem ("title",titleFor);
 }
 
-function delete () {
+function deleteSavedStuff () {
         localStorage.clear();
 }

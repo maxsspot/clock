@@ -198,3 +198,7 @@ function createTimer () {
 function deleteSavedStuff () {
         localStorage.clear();
 }
+
+document.getElementById("yes").addEventListener("click", function() {
+  window.location.href = "countdown.html";
+});

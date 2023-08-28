@@ -194,3 +194,7 @@ function createTimer () {
     localStorage.setItem ("countdownExists","true");
     localStorage.setItem ("title",titleFor);
 }
+
+function delete () {
+        localStorage.clear();
+}

@@ -193,6 +193,8 @@ function createTimer () {
     localStorage.setItem ("overallUntil",daysUntil);
     localStorage.setItem ("countdownExists","true");
     localStorage.setItem ("title",titleFor);
+
+    document.getElementById ("daysun").innerHTML = daysUntil;
 }
 
 function deleteSavedStuff () {

@@ -143,7 +143,7 @@ switch (month) {
 dayNumberText.innerHTML = dayNumber + ",";
 yearText.innerHTML = year;
 
-document.title = document.getElementById ("day").innerHTML;
+document.title = hours + ":" + minutes + ":" + seconds;
 }, 1);
 
 ///////////////////

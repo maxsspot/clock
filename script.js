@@ -193,7 +193,7 @@ function createTimer () {
 
   if (Notification.permission === "granted") {
     localStorage.setItem ("reminder","true");
-    alert ("Notification set. You will get a notification with the title and text your provided at the time you provided.");
+    alert ("Notification set. You will get a notification with the title and text you provided at the time you provided.");
   } else if (Notification.permission === "denied") {
     alert ("The permission to send notifications was denied or your browser do not support notifications.");
   }

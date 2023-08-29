@@ -152,9 +152,22 @@ if (hours < 12) {
 
 ///////////////////
 
-/*if (localStorage.getItem("reminder") && ) {
+if (localStorage.getItem("reminder") && hours + ":" + minutes === document.getElementById ("date").value) {
+      var notiTitle = document.getElementById ("title").value;
+      var notiBody = document.getElementById ("body").value;
+      var targetTime = document.getElementById ("date").value;
 
-}*/
+      function spawnNotification(notiBody, notiTitle) {
+          const options = {
+            title: notiTitle
+            body: notiBody
+      };
+              const n = new Notification(notiTitle, options);
+              console.log(n.body);
+            }
+
+    localStorage.clear();
+}
     
 }, 1);
 
@@ -190,7 +203,7 @@ function deleteSavedStuff () {
 
 function createTimer () {
   Notification.requestPermission();
-
+    
   if (Notification.permission === "granted") {
     localStorage.setItem ("reminder","true");
     alert ("Notification set. You will get a notification with the title and text you provided at the time you provided.");

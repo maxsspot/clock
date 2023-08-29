@@ -171,8 +171,6 @@ if (localStorage.getItem("reminder") && hours2 + ":" + minutes2 === document.get
     localStorage.clear();
 }
 
-console.log(hours2+":"+minutes2);
-
 }, 1);
 
 

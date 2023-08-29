@@ -173,6 +173,8 @@ if (localStorage.getItem("reminder") && hours + ":" + minutes === document.getEl
 
 ///////////////////
 
+console.log(hours+":"+minutes);
+
 function openUI () {
     document.getElementById ("ui").style.top = "10px";
     document.getElementById ("ui").style.opacity = "1";

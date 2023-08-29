@@ -152,7 +152,9 @@ if (hours < 12) {
 
 ///////////////////
 
-if (localStorage.getItem("reminder") && hours + ":" + minutes === document.getElementById ("date").value) {
+var hours2 = currentDate.getHours();
+var minutes2 = currentDate.getMinutes();
+if (localStorage.getItem("reminder") && hour2 + ":" + minutes2 === document.getElementById ("date").value) {
       var notiTitle = document.getElementById ("title").value;
       var notiText = document.getElementById ("body").value;
       var targetTime = document.getElementById ("date").value;
@@ -171,9 +173,9 @@ if (localStorage.getItem("reminder") && hours + ":" + minutes === document.getEl
     
 }, 1);
 
-///////////////////
+console.log(hours2+":"+minutes2);
 
-console.log(hours+":"+minutes);
+///////////////////
 
 function openUI () {
     document.getElementById ("ui").style.top = "10px";

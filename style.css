@@ -71,7 +71,7 @@ button {
     opacity:0;
 }
 
-input {
+input, textarea {
     width:100px;
     height:30px;
     background-color:transparent;
@@ -79,6 +79,10 @@ input {
     border-bottom:white solid 1px;
     outline:none;
     color:white;
+}
+
+textarea {
+    height:125px
 }
 
 #title {

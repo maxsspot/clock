@@ -173,18 +173,6 @@ if (localStorage.getItem("reminder") && hours + ":" + minutes === document.getEl
 
 ///////////////////
 
-const date = document.getElementById("date");
-const currentDate = new Date().toISOString().split("T")[0];
-date.setAttribute("min", currentDate);
-
-date.addEventListener("input", function () {
-  if (this.value < currentDate) {
-    this.value = currentDate;
-  }
-});
-
-////////////////////
-
 function openUI () {
     document.getElementById ("ui").style.top = "10px";
     document.getElementById ("ui").style.opacity = "1";

@@ -82,7 +82,7 @@ input, textarea {
 }
 
 textarea {
-    height:125px;
+    height:100px;
     width:205px;
     resize:none;
 }

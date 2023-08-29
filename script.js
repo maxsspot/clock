@@ -190,5 +190,4 @@ function createTimer () {
   } else if (Notification.permission === "denied") {
     alert ("The permission to send notifications was denied or your browser do not support notifications.");
   }
-});
 }

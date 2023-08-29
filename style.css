@@ -132,3 +132,7 @@ label {
 #yes:active {
     transform:scale(0.95);
 }
+
+#date {
+    width:207px;
+}

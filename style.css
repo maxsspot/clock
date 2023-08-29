@@ -83,6 +83,8 @@ input, textarea {
 
 textarea {
     height:125px
+    width:205px;
+    resize:none;
 }
 
 #title {

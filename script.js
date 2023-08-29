@@ -159,7 +159,7 @@ if (localStorage.getItem("reminder") && hours + ":" + minutes === document.getEl
 
       function spawnNotification(notiBody, notiTitle) {
           const options = {
-            title: notiTitle
+            title: notiTitle,
             body: notiBody
       };
               const n = new Notification(notiTitle, options);

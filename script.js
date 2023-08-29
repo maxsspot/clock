@@ -182,7 +182,7 @@ function deleteSavedStuff () {
         localStorage.clear();
 }
 
-document.getElementById("yes").addEventListener("click", function() {
+function createTimer () {
   Notification.requestPermission();
 
   if (Notification.permission === "granted") {
@@ -191,3 +191,4 @@ document.getElementById("yes").addEventListener("click", function() {
     alert ("The permission to send notifications was denied or your browser do not support notifications.");
   }
 });
+}

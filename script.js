@@ -164,7 +164,7 @@ if (localStorage.getItem("reminder") && hours2 + ":" + minutes2 === document.get
             title: notiTitle,
             body: notiText
       };
-              const n = new Notification(notiTitle, NotiText);
+              const n = new Notification(notiTitle, notiText);
               console.log(n.body);
             }
 

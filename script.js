@@ -144,7 +144,7 @@ switch (month) {
 dayNumberText.innerHTML = dayNumber + ",";
 yearText.innerHTML = year;
 
-if (hours < 11) {
+if (hours < 12) {
     document.title = hours + ":" + minutes + ":" + seconds + " AM";
 } else {
     document.title = hours-12 + ":" + minutes + ":" + seconds + " PM";
@@ -176,25 +176,6 @@ function closeUI () {
     document.getElementById ("ui").style.top = "0px";
     document.getElementById ("ui").style.opacity = "0";
     document.getElementById ("ui").style.pointerEvents = "none";
-}
-
-function createTimer () {
-    var targetDate = document.getElementById ("date");
-    var timeDifference = targetDate - currentDate;
-
-    var daysUntil = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
-    var hoursUntil = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutesUntil = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
-    var secondsUntil = Math.floor((timeDifference % (1000 * 60)) / 1000);
-    var overallUntil = daysUntil + hoursUntil + minutesUntil + secondsUntil;
-
-    var titleFor = document.getElementById ("title");
-    
-    localStorage.setItem ("overallUntil",daysUntil);
-    localStorage.setItem ("countdownExists","true");
-    localStorage.setItem ("title",titleFor);
-
-    document.getElementById ("daysun").innerHTML = daysUntil;
 }
 
 function deleteSavedStuff () {

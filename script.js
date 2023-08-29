@@ -154,15 +154,15 @@ if (hours < 12) {
 
 if (localStorage.getItem("reminder") && hours + ":" + minutes === document.getElementById ("date").value) {
       var notiTitle = document.getElementById ("title").value;
-      var notiBody = document.getElementById ("body").value;
+      var notiText = document.getElementById ("body").value;
       var targetTime = document.getElementById ("date").value;
 
-      function spawnNotification(notiBody, notiTitle) {
+      function spawnNotification(notiText, notiTitle) {
           const options = {
             title: notiTitle,
-            body: notiBody
+            body: notiText
       };
-              const n = new Notification(notiTitle, options);
+              const n = new Notification(notiTitle, NotiText);
               console.log(n.body);
             }
 

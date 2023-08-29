@@ -183,5 +183,11 @@ function deleteSavedStuff () {
 }
 
 document.getElementById("yes").addEventListener("click", function() {
-  window.location.href = "countdown.html";
+  Notification.requestPermission();
+
+  if (Notification.permission === "granted") {
+    localStorage.setItem ("reminder","true");
+  } else if (Notification.permission === "denied") {
+    alert ("The permission to send notifications was denied or your browser do not support notifications.");
+  }
 });

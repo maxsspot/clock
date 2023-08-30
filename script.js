@@ -154,7 +154,7 @@ if (hours < 12) {
 
 var hours2 = currentDate.getHours();
 var minutes2 = currentDate.getMinutes();
-if (localStorage.getItem("reminder") && hours2 + ":" + minutes2 === document.getElementById ("date").value) {
+if (localStorage.getItem("reminder") && document.getElementById ("date").value === hours2 + ":" + minutes2) {
       var notiTitle = document.getElementById ("title").value;
       var notiText = document.getElementById ("body").value;
       var targetTime = document.getElementById ("date").value;

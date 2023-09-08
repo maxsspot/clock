@@ -12,6 +12,10 @@ body {
     font-family:"Nunito Sans", sans-serif;
 }
 
+h1, h4 {
+    overflow:visible;
+}
+
 #clock {
   margin: 0;
   position: absolute;

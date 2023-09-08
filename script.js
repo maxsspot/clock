@@ -200,17 +200,6 @@ function closeUI () {
     document.getElementById ("ui").style.pointerEvents = "none";
 }
 
-function deleteSavedStuff () {
-        localStorage.clear();
-}
-
-function createTimer () {
-  Notification.requestPermission();
-    
-  if (Notification.permission === "granted") {
-    localStorage.setItem ("reminder","true");
-    alert ("Notification set. You will get a notification with the title and text you provided at the time you provided.");
-  } else if (Notification.permission === "denied") {
-    alert ("The permission to send notifications was denied or your browser do not support notifications.");
-  }
+function idk1 () {
+    document.getElementById ("clock").style.width = "90%";
 }

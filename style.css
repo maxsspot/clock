@@ -13,7 +13,7 @@ body {
 }
 
 h1, h4 {
-    overflow:visible;
+    white-space:nowrap;
 }
 
 #clock {

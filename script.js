@@ -201,8 +201,8 @@ function closeUI () {
 }
 
 function idk1 () {
-    document.getElementById ("day").fontSize="30px";
-    document.getElementById ("month").fontSize="30px";
-    document.getElementById ("daynumber").fontSize="30px";
-    document.getElementById ("year").fontSize="30px";
+    document.getElementById ("day").style.fontSize="30px";
+    document.getElementById ("month").style.fontSize="30px";
+    document.getElementById ("daynumber").style.fontSize="30px";
+    document.getElementById ("year").style.fontSize="30px";
 }

@@ -49,10 +49,10 @@ switch (hours) {
     case 9:
     case 10:
     case 11:
+    case 12:
         time = hours + ":" + minutes + ":" + seconds + " AM";
         timeText.innerHTML = time;
         break;
-    case 12:
     case 13:
     case 14:
     case 15:

@@ -34,6 +34,12 @@ if (minutes < 10) {
     
 }
 
+if (hours < 1) {
+    hours = "0" + hours;
+} else {
+
+}
+
 ///////////////////
 // Shows current time 
 
@@ -149,7 +155,7 @@ yearText.innerHTML = year;
 
 if (hours < 11) {
     document.title = hours + ":" + minutes + ":" + seconds + " AM";
-} else if (hours = 12) {
+} else if (hours == 12) {
     document.title = hours + ":" + minutes + ":" + seconds + " PM";
 } else {
     document.title = hours-12 + ":" + minutes + ":" + seconds + " PM";

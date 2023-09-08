@@ -199,3 +199,7 @@ function closeUI () {
     document.getElementById ("ui").style.opacity = "0";
     document.getElementById ("ui").style.pointerEvents = "none";
 }
+
+function idk1 () {
+    document.getElementById ("clock").width="90%";
+}

@@ -13,8 +13,9 @@ body {
 	white-space:nowrap;
 }
 
-h1, h4 {
-
+#idk1 {
+	background-color:transparent;
+	border:transparent;
 }
 
 #clock {

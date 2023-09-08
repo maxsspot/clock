@@ -201,5 +201,8 @@ function closeUI () {
 }
 
 function idk1 () {
-    document.getElementById ("clock").width="90%";
+    document.getElementById ("day").fontSize="30px";
+    document.getElementById ("month").fontSize="30px";
+    document.getElementById ("daynumber").fontSize="30px";
+    document.getElementById ("year").fontSize="30px";
 }

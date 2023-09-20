@@ -180,6 +180,8 @@ function changeFont () {
     
     if (selected == "Poppins") {
         document.body.style.fontFamily = "'Poppins', sans-serif";
+    } else {
+        document.body.style.fontFamily = "'Noto Sans', sans-serif";
     }
 }
 

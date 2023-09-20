@@ -168,9 +168,10 @@ if (hours < 12) {
 
 function changeFont () {
     var fontChoice = document.getElementById ("fontChoice");
-
-    if (fontChoice.value == "Poppins") {
-        document.body.style.fontFamily = "Poppins";
+    var selected = fontChoice.value;
+    
+    if (selected.value == "Poppins") {
+        document.body.style.fontFamily = "Poppins, sans-serif";
     }
 }
 

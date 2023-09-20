@@ -162,6 +162,8 @@ if (hours < 12) {
     document.title = hours-12 + ":" + minutes + ":" + seconds + " PM";
 }
 
+}, 1);
+
 ///////////////////
 
 function changeFont () {
@@ -171,8 +173,6 @@ function changeFont () {
         document.body.style.fontFamily = "Poppins";
     }
 }
-
-}, 1);
 
 
 

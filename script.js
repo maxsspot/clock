@@ -162,6 +162,10 @@ if (hours < 12) {
     document.title = hours-12 + ":" + minutes + ":" + seconds + " PM";
 }
 
+///////////////////
+
+document.body.style.backgroundColor = document.getElementById ("bg").value;
+    
 }, 1);
 
 ///////////////////

@@ -1,7 +1,9 @@
 /*localStorage.setItem ("bgColor",document.getElementById('bg'));
 document.body.style.backgroundColor = localStorage.getItem ("bgColor");*/
 
-document.body.style.fontFamily = document.getElementById ("fontChoice").value;
+document.addEventListener("DOMContentLoaded", function () {
+    document.body.style.fontFamily = document.getElementById("fontChoice").value;
+});
 
 setInterval(function() {
 var currentDate = new Date();

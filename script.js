@@ -166,9 +166,6 @@ if (hours < 12) {
 }
 
 ///////////////////
-
-document.body.style.backgroundColor = document.getElementById ("bg").value;
-localStorage.setItem ("bgColor",document.getElementById ("bg").value)
     
 }, 1);
 
@@ -182,7 +179,7 @@ fontChoice.addEventListener("change", function() {
 function changeFont () {
     var selected = fontChoice.value;
     
-    if (selected.value == "Poppins") {
+    if (selected == "Poppins") {
         document.getElementById ("clock").style.fontFamily = "Poppins";
     }
 }

@@ -166,6 +166,10 @@ if (hours < 12) {
 
 function changeFont () {
     var fontChoice = document.getELementById ("fontChoice");
+
+    if (fontChoice.value = "Poppins") {
+        document.body.style.fontFamily = "Poppins";
+    }
 }
 
 }, 1);

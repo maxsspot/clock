@@ -1,6 +1,8 @@
 /*localStorage.setItem ("bgColor",document.getElementById('bg'));
 document.body.style.backgroundColor = localStorage.getItem ("bgColor");*/
 
+document.body.style.fontFamily = document.getElementById ("fontChoice").value;
+
 setInterval(function() {
 var currentDate = new Date();
 var hours = currentDate.getHours();

@@ -171,7 +171,7 @@ function changeFont () {
     var selected = fontChoice.value;
     
     if (selected.value == "Poppins") {
-        document.body.style.fontFamily = "Poppins, sans-serif";
+        document.getElementById ("clock").style.fontFamily = "Poppins";
     }
 }
 

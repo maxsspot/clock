@@ -1,4 +1,5 @@
-
+localStorage.setItem ("bgColor",document.getElementById('bg'));
+document.body.style.backgroundColor = localStorage.getItem ("bgColor");
 
 setInterval(function() {
 var currentDate = new Date();

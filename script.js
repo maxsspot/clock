@@ -180,8 +180,12 @@ function changeFont () {
     
     if (selected == "Poppins") {
         document.body.style.fontFamily = "'Poppins', sans-serif";
-    } else {
-        document.body.style.fontFamily = "'Noto Sans', sans-serif";
+    } else if (selected == "DM Sans") {
+        document.body.style.fontFamily = "'DM Sans', sans-serif";
+    } else if (selected == "Montserrat") {
+        document.body.style.fontFamily = "'Montserrat', sans-serif";
+    } else if (selected == "Nunito Sans") {
+        document.body.style.fontFamily = "'Nunito Sans', sans-serif";
     }
 }
 

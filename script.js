@@ -170,13 +170,8 @@ if (hours < 12) {
 }, 1);
 
 ///////////////////
-var fontChoice = document.getElementById("fontChoice");
-
-fontChoice.addEventListener("change", function() {
-    changeFont();
-});
-
 function changeFont () {
+    var fontChoice = document.getElementById("fontChoice");
     var selected = fontChoice.value;
     
     if (selected == "Poppins") {

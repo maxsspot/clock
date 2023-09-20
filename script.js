@@ -1,3 +1,6 @@
+document.body.style.backgroundColor = localStorage.getItem ("bgColor");
+document.getElementById ("bg").value = localStorage.getItem ("bgColor");
+
 setInterval(function() {
 var currentDate = new Date();
 var hours = currentDate.getHours();
@@ -165,6 +168,7 @@ if (hours < 12) {
 ///////////////////
 
 document.body.style.backgroundColor = document.getElementById ("bg").value;
+localStorage.setItem ("bgColor",document.getElementById ("bg").value)
     
 }, 1);
 

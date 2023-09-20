@@ -167,7 +167,7 @@ if (hours < 12) {
 ///////////////////
 
 function changeFont () {
-    var fontChoice = document.getELementById ("fontChoice");
+    var fontChoice = document.getElementById ("fontChoice");
 
     if (fontChoice.value = "Poppins") {
         document.body.style.fontFamily = "Poppins";

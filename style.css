@@ -97,7 +97,7 @@ button {
 input, textarea {
     width:55px;
     height:25px;
-    background-color:white;
+    background-color:transparent;
     border:white solid 1px;
 	border-radius:5px;
     outline:none;

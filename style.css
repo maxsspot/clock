@@ -11,6 +11,7 @@ body {
     color:white;
     font-family:"Nunito Sans", sans-serif;
 	white-space:nowrap;
+	transition:all 0.5s;
 }
 
 select {

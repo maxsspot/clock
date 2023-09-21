@@ -223,6 +223,12 @@ if (window.innerWidth <= 768) {
   document.getElementById ("section2").style.fontSize = "35px";
 }
 
+//////////////////
+
+    var newBG = document.getElementById ("bgColor").value;
+    document.body.style.backgroundColor = newBG;
+    localStorage.setItem ("backgroundColor", newBg);
+
 }, 1);
 
 ///////////////////
@@ -261,9 +267,7 @@ function changeFont () {
 //////////////////
 
 function changeBG () {
-    var newBG = document.getElementById ("bgColor").value;
-    document.body.style.backgroundColor = newBG;
-    localStorage.setItem ("backgroundColor", newBg);
+
 }
 
 ///////////////////

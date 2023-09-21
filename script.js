@@ -265,8 +265,5 @@ function closeUI () {
 }
 
 function idk1 () {
-    document.getElementById ("day").style.fontSize="30px";
-    document.getElementById ("month").style.fontSize="30px";
-    document.getElementById ("daynumber").style.fontSize="30px";
-    document.getElementById ("year").style.fontSize="30px";
+    document.getElementById ("clock").transform.scale = "1.1";
 }

@@ -44,8 +44,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     //////////
 
-    if (loadedBackground != null) {
-        document.body.style.backgroundColor = loadedBackground.value;
+    if (loadedBackground) {
+        document.body.style.backgroundColor = loadedBackground;
     } else {
         document.body.style.backgroundColor = "black";
     }

@@ -5,12 +5,16 @@
 
 body {
 	text-align:center;
-    font-size:30px;
-    background-color:black;
-    color:white;
-    font-family:"Nunito Sans", sans-serif;
+    	font-size:30px;
+    	background-color:black;
+    	color:white;
+   	font-family:"Nunito Sans", sans-serif;
 	white-space:nowrap;
 	transition:all 0.5s;
+}
+
+h4 {
+	font-size:14px;
 }
 
 select {

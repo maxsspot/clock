@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     //////////
 
-    if (loadedBackground) {
+    if (localStorage.getItem ("backgroundColor")) {
         document.body.style.backgroundColor = loadedBackground;
     } else {
         document.body.style.backgroundColor = "black";

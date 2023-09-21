@@ -44,10 +44,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     //////////
 
-    if (localStorage.getItem ("backgroundColor")) {
         document.body.style.backgroundColor = loadedBackground;
-    } else {
-        document.body.style.backgroundColor = "black";
+        document.getElementById ("bgColor").value = loadedBackground;
     }
 });
 

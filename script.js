@@ -220,10 +220,6 @@ if (window.innerWidth <= 768) {
 
 //////////////////
 
-    var newBG = document.getElementById ("bgColor").value;
-    document.body.style.backgroundColor = newBG;
-    localStorage.setItem ("backgroundColor", newBG);
-
 }, 1);
 
 ///////////////////

@@ -265,5 +265,5 @@ function closeUI () {
 }
 
 function idk1 () {
-    document.getElementById ("clock").transform.scale = "1.1";
+    document.getElementById ("clock").style.transform = "scale(1.1)";
 }

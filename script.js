@@ -210,7 +210,7 @@ if (hours < 12) {
 
 var section2 = document.getElementById ("section2")
   if (section2.scrollHeight > section2.clientHeight || section2.scrollWidth > section2.clientWidth) {
-    section2.style.fontSize = "12px";
+    section2.style.fontSize = "8px";
   }
     
 }, 1);

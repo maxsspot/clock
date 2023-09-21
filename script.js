@@ -209,9 +209,9 @@ if (hours < 12) {
 ///////////////////
 
 if (window.innerWidth <= 768) {
-  document.getElementById ("section2").style.fontSize = "16px";
+  document.getElementById ("section2").style.fontSize = "27px";
 } else {
-  document.getElementById ("section2").style.fontSize = "19px";
+  document.getElementById ("section2").style.fontSize = "30px";
 }
 
 }, 1);

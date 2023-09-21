@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (loadedFont == "Nunito Sans") {
         
         document.body.style.fontFamily = "Nunito Sans";
+        document.getElementById("fontChoice").value="Nunito Sans";
         
     } else if (loadedFont == "Poppins") {
         
@@ -16,22 +17,27 @@ document.addEventListener("DOMContentLoaded", function () {
     } else if (loadedFont == "DM Sans") {
         
         document.body.style.fontFamily = "DM Sans";
+        document.getElementById("fontChoice").value="DM Sans";
         
     } else if (loadedFont == "Montserrat") {
         
         document.body.style.fontFamily = "Montserrat";
+        document.getElementById("fontChoice").value="Montserrat";
         
     } else if (loadedFont == "Nunito Sans") {
         
         document.body.style.fontFamily = "Nunito Sans";
+        document.getElementById("fontChoice").value="Nunito Sans";
         
     } else if (loadedFont == "Inconsolata") {
         
         document.body.style.fontFamily = "Inconsolata";
+        document.getElementById("fontChoice").value="Inconsolata";
         
     } else {
         
         document.body.style.fontFamily = "Nunito Sans";
+        document.getElementById("fontChoice").value="Nunito Sans";
         
     }
 });

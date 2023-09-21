@@ -16,7 +16,9 @@ document.addEventListener("DOMContentLoaded", function () {
         document.body.style.fontFamily = "Nunito Sans";
     } else if (loadedFont == "Inconsolata") {
         document.body.style.fontFamily = "Inconsolata";
-    } else
+    } else {
+        document.body.style.fontFamily = "Nunito Sans";
+    }
 });
 
 setInterval(function() {

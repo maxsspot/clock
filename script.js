@@ -208,11 +208,12 @@ if (hours < 12) {
 
 ///////////////////
 
-var section2 = document.getElementById ("section2")
-  if (section2.scrollHeight > section2.clientHeight || section2.scrollWidth > section2.clientWidth) {
-    section2.style.fontSize = "8px";
-  }
-    
+if (window.innerWidth <= 768) {
+  document.getElementById ("section2").style.fontSize = "16px";
+} else {
+  document.getElementById ("section2").style.fontSize = "19px";
+}
+
 }, 1);
 
 ///////////////////
@@ -265,5 +266,5 @@ function closeUI () {
 }
 
 function idk1 () {
-    document.getElementById ("clock").style.transform = "scale(1.1)";
+    
 }

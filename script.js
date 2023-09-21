@@ -261,7 +261,7 @@ function changeFont () {
 //////////////////
 
 function changeBG () {
-    var newBG = document.getElementById ("bgColor");
+    var newBG = document.getElementById ("bgColor").value;
     document.body.style.backgroundColor = newBG;
     localStorage.setItem ("backgroundColor", newBg);
 }

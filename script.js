@@ -5,19 +5,34 @@ var loadedFont = localStorage.getItem ("loadFont");
 
 document.addEventListener("DOMContentLoaded", function () {
     if (loadedFont == "Nunito Sans") {
+        
         document.body.style.fontFamily = "Nunito Sans";
+        
     } else if (loadedFont == "Poppins") {
+        
         document.body.style.fontFamily = "Poppins";
+        document.getElementById("fontChoice").value="Poppins";
+        
     } else if (loadedFont == "DM Sans") {
+        
         document.body.style.fontFamily = "DM Sans";
+        
     } else if (loadedFont == "Montserrat") {
+        
         document.body.style.fontFamily = "Montserrat";
+        
     } else if (loadedFont == "Nunito Sans") {
+        
         document.body.style.fontFamily = "Nunito Sans";
+        
     } else if (loadedFont == "Inconsolata") {
+        
         document.body.style.fontFamily = "Inconsolata";
+        
     } else {
+        
         document.body.style.fontFamily = "Nunito Sans";
+        
     }
 });
 

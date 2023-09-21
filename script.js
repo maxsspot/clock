@@ -186,6 +186,8 @@ function changeFont () {
         document.body.style.fontFamily = "'Montserrat', sans-serif";
     } else if (selected == "Nunito Sans") {
         document.body.style.fontFamily = "'Nunito Sans', sans-serif";
+    } else if (selected == "Inconsolata") {
+        document.body.style.fontFamily = "'Inconsolata', sans-serif";
     }
 }
 

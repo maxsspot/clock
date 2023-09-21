@@ -4,6 +4,9 @@ document.getElementById("clock").style.backgroundColor = localStorage.getItem ("
 var loadedFont = localStorage.getItem ("loadFont");
 var loadedBackground = localStorage.getItem ("backgroundColor");
 
+            document.getElementById ("bgColor").value = loadedBackground;
+            document.body.style.backgroundColor = document.getElementById ("bgColor").value;
+
 document.addEventListener("DOMContentLoaded", function () {
     if (loadedFont == "Nunito Sans") {
         
@@ -43,9 +46,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     //////////
-
-            document.getElementById ("bgColor").value = loadedBackground;
-            document.body.style.backgroundColor = document.getElementById ("bgColor").value;
         
 });
 

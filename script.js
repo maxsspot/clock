@@ -209,11 +209,9 @@ if (hours < 12) {
 ///////////////////
 
 var section2 = document.getElementById ("section2")
-function isOverflown(section2) {
-  if (return element.scrollHeight > element.clientHeight || element.scrollWidth > element.clientWidth) {
+  if (section2.scrollHeight > section2.clientHeight || section2.scrollWidth > section2.clientWidth) {
     section2.style.fontSize = "12px";
   }
-}
     
 }, 1);
 

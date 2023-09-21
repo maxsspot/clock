@@ -1,8 +1,22 @@
 /*localStorage.setItem ("bgColor",document.getElementById('bg'));
 document.body.style.backgroundColor = localStorage.getItem ("bgColor");*/
 
+var loadedFont = localStorage.getItem ("loadFont");
+
 document.addEventListener("DOMContentLoaded", function () {
-    document.body.style.fontFamily = document.getElementById("fontChoice").value;
+    if (loadedFont == "Nunito Sans") {
+        document.body.style.fontFamily = "Nunito Sans";
+    } else if (loadedFont == "Poppins") {
+        document.body.style.fontFamily = "Poppins";
+    } else if (loadedFont == "DM Sans") {
+        document.body.style.fontFamily = "DM Sans";
+    } else if (loadedFont == "Montserrat") {
+        document.body.style.fontFamily = "Montserrat";
+    } else if (loadedFont == "Nunito Sans") {
+        document.body.style.fontFamily = "Nunito Sans";
+    } else if (loadedFont == "Inconsolata") {
+        document.body.style.fontFamily = "Inconsolata";
+    } else
 });
 
 setInterval(function() {
@@ -179,15 +193,30 @@ function changeFont () {
     var selected = fontChoice.value;
     
     if (selected == "Poppins") {
+        
         document.body.style.fontFamily = "'Poppins', sans-serif";
+        localStorage.setItem ("loadFont","Poppins");
+        
     } else if (selected == "DM Sans") {
+        
         document.body.style.fontFamily = "'DM Sans', sans-serif";
+        localStorage.setItem ("loadFont","DM Sans");
+        
     } else if (selected == "Montserrat") {
+        
         document.body.style.fontFamily = "'Montserrat', sans-serif";
+        localStorage.setItem ("loadFont","Montserrat");
+        
     } else if (selected == "Nunito Sans") {
+        
         document.body.style.fontFamily = "'Nunito Sans', sans-serif";
+        localStorage.setItem ("loadFont","Nunito Sans");
+        
     } else if (selected == "Inconsolata") {
+        
         document.body.style.fontFamily = "'Inconsolata', sans-serif";
+        localStorage.setItem ("loadFont","Inconsolata");
+        
     }
 }
 

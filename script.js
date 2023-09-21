@@ -2,6 +2,7 @@
 document.getElementById("clock").style.backgroundColor = localStorage.getItem ("bgColor");*/
 
 var loadedFont = localStorage.getItem ("loadFont");
+var loadedBackground = localStorage.getItem ("backgroundColor");
 
 document.addEventListener("DOMContentLoaded", function () {
     if (loadedFont == "Nunito Sans") {
@@ -39,6 +40,14 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("clock").style.fontFamily = "Nunito Sans";
         document.getElementById("fontChoice").value="Nunito Sans";
         
+    }
+
+    //////////
+
+    if (loadedBackground != null) {
+        document.body.style.backgroundColor = loadedBackground.value;
+    } else {
+        document.body.style.backgroundColor = "black";
     }
 });
 
@@ -249,7 +258,13 @@ function changeFont () {
     }
 }
 
+//////////////////
 
+function changeBG () {
+    var newBG = document.getElementById ("bgColor");
+    document.body.style.backgroundColor = newBG.value;
+    localStorage.setItem ("backgroundColor", newBg);
+}
 
 ///////////////////
 

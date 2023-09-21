@@ -44,9 +44,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     //////////
 
-        document.body.style.backgroundColor = loadedBackground;
         document.getElementById ("bgColor").value = loadedBackground;
-    
+        document.body.style.backgroundColor = document.getElementById ("bgColor").value;
 });
 
 setInterval(function() {

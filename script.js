@@ -207,6 +207,12 @@ if (hours < 12) {
 }
 
 ///////////////////
+
+function isOverflown(document.getElementById ("section2")) {
+  if (return element.scrollHeight > element.clientHeight || element.scrollWidth > element.clientWidth) {
+    document.getElementById ("section2").style.fontSize = "12px";
+  }
+}
     
 }, 1);
 

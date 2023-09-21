@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         
 
-        if (localStorage.getItem ("loadedBackground").value == null) {
+        if (localStorage.getItem ("backgroundColor").value == null) {
             document.body.style.backgroundColor = "black";
         } else {
             document.getElementById ("bgColor").value = loadedBackground;

@@ -1,42 +1,42 @@
 /*localStorage.setItem ("bgColor",document.getElementById('bg'));
-document.body.style.backgroundColor = localStorage.getItem ("bgColor");*/
+document.getElementById("clock").style.backgroundColor = localStorage.getItem ("bgColor");*/
 
 var loadedFont = localStorage.getItem ("loadFont");
 
 document.addEventListener("DOMContentLoaded", function () {
     if (loadedFont == "Nunito Sans") {
         
-        document.body.style.fontFamily = "Nunito Sans";
+        document.getElementById("clock").style.fontFamily = "Nunito Sans";
         document.getElementById("fontChoice").value="Nunito Sans";
         
     } else if (loadedFont == "Poppins") {
         
-        document.body.style.fontFamily = "Poppins";
+        document.getElementById("clock").style.fontFamily = "Poppins";
         document.getElementById("fontChoice").value="Poppins";
         
     } else if (loadedFont == "DM Sans") {
         
-        document.body.style.fontFamily = "DM Sans";
+        document.getElementById("clock").style.fontFamily = "DM Sans";
         document.getElementById("fontChoice").value="DM Sans";
         
     } else if (loadedFont == "Montserrat") {
         
-        document.body.style.fontFamily = "Montserrat";
+        document.getElementById("clock").style.fontFamily = "Montserrat";
         document.getElementById("fontChoice").value="Montserrat";
         
     } else if (loadedFont == "Nunito Sans") {
         
-        document.body.style.fontFamily = "Nunito Sans";
+        document.getElementById("clock").style.fontFamily = "Nunito Sans";
         document.getElementById("fontChoice").value="Nunito Sans";
         
     } else if (loadedFont == "Inconsolata") {
         
-        document.body.style.fontFamily = "Inconsolata";
+        document.getElementById("clock").style.fontFamily = "Inconsolata";
         document.getElementById("fontChoice").value="Inconsolata";
         
     } else {
         
-        document.body.style.fontFamily = "Nunito Sans";
+        document.getElementById("clock").style.fontFamily = "Nunito Sans";
         document.getElementById("fontChoice").value="Nunito Sans";
         
     }
@@ -217,27 +217,27 @@ function changeFont () {
     
     if (selected == "Poppins") {
         
-        document.body.style.fontFamily = "'Poppins', sans-serif";
+        document.getElementById("clock").style.fontFamily = "'Poppins', sans-serif";
         localStorage.setItem ("loadFont","Poppins");
         
     } else if (selected == "DM Sans") {
         
-        document.body.style.fontFamily = "'DM Sans', sans-serif";
+        document.getElementById("clock").style.fontFamily = "'DM Sans', sans-serif";
         localStorage.setItem ("loadFont","DM Sans");
         
     } else if (selected == "Montserrat") {
         
-        document.body.style.fontFamily = "'Montserrat', sans-serif";
+        document.getElementById("clock").style.fontFamily = "'Montserrat', sans-serif";
         localStorage.setItem ("loadFont","Montserrat");
         
     } else if (selected == "Nunito Sans") {
         
-        document.body.style.fontFamily = "'Nunito Sans', sans-serif";
+        document.getElementById("clock").style.fontFamily = "'Nunito Sans', sans-serif";
         localStorage.setItem ("loadFont","Nunito Sans");
         
     } else if (selected == "Inconsolata") {
         
-        document.body.style.fontFamily = "'Inconsolata', sans-serif";
+        document.getElementById("clock").style.fontFamily = "'Inconsolata', sans-serif";
         localStorage.setItem ("loadFont","Inconsolata");
         
     }

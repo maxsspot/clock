@@ -279,6 +279,6 @@ function closeUI () {
 
 function idk1 () {
     if (isMobile === false) {
-        document.getElementById ("time").style.fontSize = "250%";
+        document.getElementById ("time").style.fontSize = "10vh";
     }
 }

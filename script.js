@@ -214,11 +214,10 @@ if (hours < 12) {
 
 if (window.innerWidth <= 768) {
   document.getElementById ("section2").style.fontSize = "29px";
+  var isMobile = true;
 } else {
   document.getElementById ("section2").style.fontSize = "35px";
-  function idk1 () {
-    document.getElementById ("time").style.fontSize = "250%";
-  }
+  var isMobile = false;
 }
 
 //////////////////
@@ -276,4 +275,10 @@ function closeUI () {
     document.getElementById ("ui").style.top = "0px";
     document.getElementById ("ui").style.opacity = "0";
     document.getElementById ("ui").style.pointerEvents = "none";
+}
+
+function idk1 () {
+    if (isMobile === false) {
+        document.getElementById ("time").style.fontSize = "250%";
+    }
 }

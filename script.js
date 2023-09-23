@@ -216,6 +216,9 @@ if (window.innerWidth <= 768) {
   document.getElementById ("section2").style.fontSize = "29px";
 } else {
   document.getElementById ("section2").style.fontSize = "35px";
+  function idk1 () {
+    document.getElementById ("time").style.fontSize = "250%";
+  }
 }
 
 //////////////////
@@ -273,8 +276,4 @@ function closeUI () {
     document.getElementById ("ui").style.top = "0px";
     document.getElementById ("ui").style.opacity = "0";
     document.getElementById ("ui").style.pointerEvents = "none";
-}
-
-function idk1 () {
-    document.getElementById ("time").style.fontSize = "200%";
 }

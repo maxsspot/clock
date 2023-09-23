@@ -123,7 +123,7 @@ switch (hours) {
     case 22:
     case 23:
     case 24:
-        time = hours-12 + ":" + minutes + ":" + seconds + " <p style = 'position:absolute'>PM</p>";
+        time = hours-12 + ":" + minutes + ":" + seconds + " PM";
         timeText.innerHTML = time;
         break;
 }

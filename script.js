@@ -108,7 +108,7 @@ switch (hours) {
         timeText.innerHTML = time;
         break;
     case 12:
-        time = hours + ":" + minutes + ":" + seconds + " PM";
+        time = hours + ":" + minutes + ":" + seconds + " <p style = 'position:fixed'>PM</p>";
         timeText.innerHTML = time;
         break;
     case 13:

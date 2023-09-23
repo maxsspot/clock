@@ -13,6 +13,10 @@ body {
 	background-color:black;
 }
 
+input[type="checkbox"] {
+	transform:scale(0.8);
+}
+
 select {
 	background-color:black;
 	color:white;

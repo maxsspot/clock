@@ -276,5 +276,5 @@ function closeUI () {
 }
 
 function idk1 () {
-    document.getElementById ("time").style.fontSize = "90%";
+    document.getElementById ("time").style.fontSize = "200%";
 }

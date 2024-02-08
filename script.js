@@ -283,7 +283,7 @@ function idk1 () {
         document.getElementById ("clock").style.transform = "scale(1.2)";
         isZoomed = true;
     } else {
-        document.getElementById ("clock").style.transform = "scale(1.2)";
+        document.getElementById ("clock").style.transform = "scale(1.0)";
         isZoomed = false;
     }   
 }

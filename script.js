@@ -277,8 +277,13 @@ function closeUI () {
     document.getElementById ("ui").style.pointerEvents = "none";
 }
 
+var isZoomed = false;
 function idk1 () {
-    if (isMobile === false) {
-        document.getElementById ("time").style.fontSize = "10vh";
-    }
+    if (isMobile === false && isZoomed = false) {
+        document.getElementById ("clock").style.transform = "scale(1.2)";
+        isZoomed = true;
+    } else {
+        document.getElementById ("clock").style.transform = "scale(1.2)";
+        isZoomed = false;
+    }   
 }

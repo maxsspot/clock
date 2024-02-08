@@ -276,14 +276,3 @@ function closeUI () {
     document.getElementById ("ui").style.opacity = "0";
     document.getElementById ("ui").style.pointerEvents = "none";
 }
-
-var isZoomed = false;
-function idk1 () {
-    if (isMobile === false && isZoomed = false) {
-        document.getElementById ("clock").style.transform = "scale(1.2)";
-        isZoomed = true;
-    } else {
-        document.getElementById ("clock").style.transform = "scale(1.0)";
-        isZoomed = false;
-    }   
-}

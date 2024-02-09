@@ -259,8 +259,17 @@ function changeFont () {
 
 //////////////////
 
-function changeBG () {
-
+var isZoomed = false;
+function idk1 () {
+  if (!isMobile) {
+    if (!isZoomed) {
+        document.getElementById ("clock").style.transform = "scale(1.2)";
+        isZoomed = true;
+    } else {
+        document.getElementById ("clock").style.transform = "scale(1.0)";
+        isZoomed = false;
+    }
+  }
 }
 
 ///////////////////

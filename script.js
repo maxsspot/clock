@@ -260,7 +260,7 @@ function changeFont () {
 //////////////////
 
 var isZoomed = false;
-function idk1 () {
+function zoom () {
   if (!isMobile) {
     if (!isZoomed) {
         document.getElementById ("clock").style.transform = "scale(1.2)";

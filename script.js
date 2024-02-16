@@ -259,18 +259,7 @@ function changeFont () {
 
 //////////////////
 
-var isZoomed = false;
-function zoom () {
-  //if (!isMobile) {
-    if (!isZoomed) {
-        document.getElementById ("clock").style.transform = "scale(1.2)";
-        isZoomed = true;
-    } else {
-        document.getElementById ("clock").style.transform = "scale(1.0)";
-        isZoomed = false;
-    }
-  //}
-}
+
 
 ///////////////////
 

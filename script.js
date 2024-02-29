@@ -1,6 +1,3 @@
-/*localStorage.setItem ("bgColor",document.getElementById('bg'));
-document.getElementById("clock").style.backgroundColor = localStorage.getItem ("bgColor");*/
-
 var loadedFont = localStorage.getItem ("loadFont");
 var loadedBackground = localStorage.getItem ("backgroundColor");
 
@@ -309,7 +306,7 @@ function changeFont () {
 
 //////////////////
 
-var isFullScreen = false;
+/*var isFullScreen = false;
 var fsbutton = document.getElementById ("fsbutton");
 
 function fsidk () {
@@ -332,6 +329,11 @@ function fsidk () {
         isfullscreen=false;
         fsbutton.innerHTML = "<i class='fa-solid fa-expand fa-lg'></i>";
     }
+}*/
+
+var bgColor = document.getElementById ("bgColor");
+function changeBg () {
+    document.style.backgroundColor = bgColor.value;
 }
 
 ///////////////////

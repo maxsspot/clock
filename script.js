@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.body.style.backgroundColor = loadedBackground;
     document.getElementById ("backgroundColor").value = loadedBackground;
 
-    document.body.style.backgroundColor = loadedColor;
+    document.getElementById ("clock").style.color = loadedColor;
     document.getElementById ("textColor").value = loadedColor;
     
 });

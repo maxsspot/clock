@@ -72,7 +72,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.getElementById ("clock").style.color = loadedColor;
     document.getElementById ("textColor").value = loadedColor;
-    
+
+    /////////
 });
 
 setInterval(function() {
@@ -243,9 +244,11 @@ if (hours < 12) {
 
 if (window.innerWidth <= 768) {
   document.getElementById ("section2").style.fontSize = "29px";
+  document.getElementById ("styles").style.scale = "0.7";
   var isMobile = true;
 } else {
   document.getElementById ("section2").style.fontSize = "35px";
+  document.getElementById ("styles").style.scale = "1.0";
   var isMobile = false;
 }
 

@@ -331,9 +331,9 @@ function fsidk () {
     }
 }*/
 
-var bgColor = document.getElementById ("bgColor").value;
+var bgColor = document.getElementById ("backgroundColor");
 function changeBg () {
-    document.style.backgroundColor = bgColor;
+    document.style.backgroundColor = bgColor.value;
 }
 
 ///////////////////

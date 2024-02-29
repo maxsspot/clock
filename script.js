@@ -271,7 +271,7 @@ function fullScreenFunction () {
             document.webkitRequestFullScreen();
         }
         isFullScreen=true;
-        fsbutton.innerHTML = "<i class='fa-solid fa-compress'></i>";
+        fsbutton.innerHTML = "<i class='fa-solid fa-compress fa-lg'></i>";
     } else {
         
         if (document.exitFullScreen) {
@@ -280,7 +280,7 @@ function fullScreenFunction () {
             document.webkiteExitFullScreen();
         }
         isfullscreen=false;
-        fsbutton.innerHTML = "<i class='fa-solid fa-expand'></i>";
+        fsbutton.innerHTML = "<i class='fa-solid fa-expand fa-lg'></i>";
     }
 }
 

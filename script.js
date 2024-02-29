@@ -334,7 +334,7 @@ function fsidk () {
 
 function changeBg () {
     document.body.style.backgroundColor = document.getElementById("backgroundColor").value;
-    localStorage.setItem ("loadedBackground",document.getElementById("backgroundColor").value);
+    localStorage.setItem ("backgroundColor",document.getElementById("backgroundColor").value);
 }
 
 ///////////////////

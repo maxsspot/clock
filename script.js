@@ -35,6 +35,31 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("clock").style.fontFamily = "Inconsolata";
         document.getElementById("fontChoice").value="Inconsolata";
         
+    } else if (loadedFont == "Roboto") {
+        
+        document.getElementById("clock").style.fontFamily = "Roboto";
+        document.getElementById("fontChoice").value="Roboto";
+        
+    } else if (loadedFont == "Hind") {
+        
+        document.getElementById("clock").style.fontFamily = "Hind";
+        document.getElementById("fontChoice").value="Hind";
+        
+    } else if (loadedFont == "PT Sans") {
+        
+        document.getElementById("clock").style.fontFamily = "PT Sans";
+        document.getElementById("fontChoice").value="PT Sans";
+        
+    } else if (loadedFont == "Archivo") {
+        
+        document.getElementById("clock").style.fontFamily = "Archivo";
+        document.getElementById("fontChoice").value="Archivo";
+        
+    } else if (loadedFont == "Jost") {
+        
+        document.getElementById("clock").style.fontFamily = "Jost";
+        document.getElementById("fontChoice").value="Jost";
+        
     } else {
         
         document.getElementById("clock").style.fontFamily = "Nunito Sans";
@@ -253,6 +278,31 @@ function changeFont () {
         
         document.getElementById("clock").style.fontFamily = "'Inconsolata', sans-serif";
         localStorage.setItem ("loadFont","Inconsolata");
+        
+    } else if (selected == "Roboto") {
+        
+        document.getElementById("clock").style.fontFamily = "'Roboto', sans-serif";
+        localStorage.setItem ("loadFont","Roboto");
+        
+    } else if (selected == "Hind") {
+        
+        document.getElementById("clock").style.fontFamily = "'Hind', sans-serif";
+        localStorage.setItem ("loadFont","Hind");
+        
+    } else if (selected == "PT Sans") {
+        
+        document.getElementById("clock").style.fontFamily = "'PT Sans', sans-serif";
+        localStorage.setItem ("loadFont","PT Sans");
+        
+    } else if (selected == "Archivo") {
+        
+        document.getElementById("clock").style.fontFamily = "'Archivo', sans-serif";
+        localStorage.setItem ("loadFont","Archivo");
+        
+    } else if (selected == "Jost") {
+        
+        document.getElementById("clock").style.fontFamily = "'Jost', sans-serif";
+        localStorage.setItem ("loadFont","Jost");
         
     }
 }

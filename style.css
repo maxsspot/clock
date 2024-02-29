@@ -13,10 +13,6 @@ body {
 	background-color:black;
 }
 
-footer {
-	overflow-wrap:break-word;
-}
-
 input[type="checkbox"] {
 	transform:scale(0.7);
 	background-color:transparent;
@@ -67,6 +63,7 @@ footer {
     height:75px;
     width:100%;
     overflow-wrap:break-word;
+    position:fixed;
     bottom:10px;
 }
 

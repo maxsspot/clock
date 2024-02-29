@@ -333,7 +333,7 @@ function fsidk () {
 
 var bgColor = document.getElementById ("backgroundColor");
 function changeBg () {
-    document.body.style.backgroundColor = bgColor;
+    document.body.style.backgroundColor = bgColor.value;
 }
 
 ///////////////////

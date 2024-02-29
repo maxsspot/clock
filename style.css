@@ -13,6 +13,12 @@ body {
 	background-color:black;
 }
 
+footer {
+	position:fixed;
+	bottom:0;
+	width:100%;
+}
+
 input[type="checkbox"] {
 	transform:scale(0.7);
 	background-color:transparent;

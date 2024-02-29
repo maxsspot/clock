@@ -244,7 +244,7 @@ if (hours < 12) {
 
 if (window.innerWidth <= 768) {
   document.getElementById ("section2").style.fontSize = "29px";
-  document.getElementById ("styles").style.scale = "0.7";
+  document.getElementById ("styles").style.scale = "0.9";
   var isMobile = true;
 } else {
   document.getElementById ("section2").style.fontSize = "35px";

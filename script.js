@@ -309,34 +309,13 @@ function changeFont () {
 
 //////////////////
 
-/*var isFullScreen = false;
-var fsbutton = document.getElementById ("fsbutton");
-
-function fsidk () {
-    if (!isFullScreen) {
-        
-        if (document.requestFullScreen) {
-            document.requestFullScreen();
-        } else if (document.webkitRequestFullScreen) {
-            document.webkitRequestFullScreen();
-        }
-        isFullScreen=true;
-        fsbutton.innerHTML = "<i class='fa-solid fa-compress fa-lg'></i>";
-    } else {
-        
-        if (document.exitFullScreen) {
-            document.exitFullScreen();
-        } else if (document.webkitExitFullScreen) {
-            document.webkiteExitFullScreen();
-        }
-        isfullscreen=false;
-        fsbutton.innerHTML = "<i class='fa-solid fa-expand fa-lg'></i>";
-    }
-}*/
-
 function changeBg () {
     document.body.style.backgroundColor = document.getElementById("backgroundColor").value;
     localStorage.setItem ("backgroundColor",document.getElementById("backgroundColor").value);
+}
+
+function changeTxt () {
+    document.getElementById ("clock").style.color = document.getElementById ("textColor").value;
 }
 
 ///////////////////

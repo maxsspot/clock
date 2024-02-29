@@ -65,8 +65,8 @@ h4, h5 {
 
 footer {
     height:75px;
-    position:fixed;
     width:100%;
+    overflow-wrap:break-word;
     bottom:10px;
 }
 

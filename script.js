@@ -1,5 +1,6 @@
 var loadedFont = localStorage.getItem ("loadFont");
 var loadedBackground = localStorage.getItem ("backgroundColor");
+var loadedColor = localStorage.getItem ("clockColor");
 
 document.addEventListener("DOMContentLoaded", function () {
     if (loadedFont == "Nunito Sans") {
@@ -68,6 +69,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.body.style.backgroundColor = loadedBackground;
     document.getElementById ("backgroundColor").value = loadedBackground;
+
+    document.body.style.backgroundColor = loadedColor;
+    document.getElementById ("textColor").value = loadedColor;
     
 });
 
@@ -316,6 +320,7 @@ function changeBg () {
 
 function changeTxt () {
     document.getElementById ("clock").style.color = document.getElementById ("textColor").value;
+    localStorage.setItem ("clockColor",document.getElementById("textColor").value);
 }
 
 ///////////////////

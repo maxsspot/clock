@@ -262,7 +262,7 @@ function changeFont () {
 var isFullScreen = false;
 var fsbutton = document.getElementById ("fsbutton");
 
-function fullScreenFunction () {
+function fsidk () {
     if (!isFullScreen) {
         
         if (document.requestFullScreen) {

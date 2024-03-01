@@ -13,6 +13,14 @@ body {
 	background-color:black;
 }
 
+#custombg {
+	width:75px;
+	height:30px;
+	background-color:transparent;
+	border:white solid 1px;
+	border-radius:20px;
+}
+
 input[type="checkbox"] {
 	transform:scale(0.7);
 	background-color:transparent;

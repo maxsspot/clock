@@ -341,6 +341,8 @@ function urlupload () {
         document.body.style.background = "url(" + custom + ")";
         document.body.style.backgroundRepeat = "none";
         document.body.style.backgroundSize = "cover";
+
+        canceloptions();
     }
 }
 

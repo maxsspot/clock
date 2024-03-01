@@ -328,6 +328,8 @@ function changeTxt () {
     localStorage.setItem ("clockColor",document.getElementById("textColor").value);
 }
 
+//////////////////
+
 function openoptions () {
     document.getElementById ("customimage").style.opacity="1";
     document.getElementById ("customimage").style.pointerEvents = "all";
@@ -338,16 +340,20 @@ function closeoptions () {
     document.getElementById ("customimage").style.pointerEvents = "none";
 }
 
+var custom = prompt("Please enter the URL of your image.");
 function urlupload () {
-    var custom = prompt("Please enter the URL of your image.");
-
     if (custom != null) {
         document.body.style.background = "url(" + custom + ")";
         document.body.style.backgroundRepeat = "none";
         document.body.style.backgroundSize = "cover";
 
         closeoptions();
+        saveUrlImage();
     }
+}
+
+function saveUrlImage () {
+    localStorage.setItem ("imageUrl",custom);
 }
 
 ///////////////////

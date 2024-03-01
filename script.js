@@ -329,10 +329,11 @@ function changeTxt () {
 }
 
 function custombg () {
-    var custom = 
+    var custom = prompt("Please enter the URL of your image");
 
     if (custom != null) {
-        document.body.style.background = "url(prompt('Please insert the URL of your image.'))";
+        alert(custom);
+        document.body.style.background = "url()";
         document.body.style.backgroundRepeat = "none";
         document.body.style.backgroundSize = "cover";
     }

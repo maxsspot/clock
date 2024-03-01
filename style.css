@@ -19,6 +19,7 @@ body {
 	background-color:transparent;
 	border:white solid 1px;
 	border-radius:20px;
+	color:white;
 }
 
 input[type="checkbox"] {

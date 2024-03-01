@@ -147,7 +147,7 @@ button {
     opacity:0;
 }
 
-input, textarea {
+/*input, textarea {
     width:55px;
     height:25px;
     background-color:transparent;
@@ -155,7 +155,7 @@ input, textarea {
 	border-radius:5px;
     outline:none;
     color:white;
-}
+}*/
 
 textarea {
     height:60px;

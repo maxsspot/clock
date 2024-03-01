@@ -29,9 +29,17 @@
 			<option value = "Archivo" style = "font-family:'Archivo', sans-serif;">Archivo</option>
 			<option value = "Jost" style = "font-family:'Jost', sans-serif">Jost</option>
 		</select>
+
+		<label for = "fontWeight">Font Weight:</label>
+		<select id = "fontWeight" oninput = "changeWeight()">
+			<option value = "Light">Light</option>
+			<option value = "Normal">Normal</option>
+			<option value = "Bold">Bold</option>
+		</select>
 		|
 		<label for = "bgColor">BG Color: </label>
 		<input onchange = "changeBg()" id = "backgroundColor" type = "color" style = "transform:scale(0.8);"/>
+		
 		<label for = "textColor">Text Color: </label>
 		<input onchange = "changeTxt()" id = "textColor" type = "color" style = "transform:scale(0.8);" value = "#ffffff" />
         </footer>

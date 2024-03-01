@@ -350,7 +350,7 @@ function urlupload () {
     custom = prompt("Please enter the URL of your image.");
     if (custom != null) {
         document.body.style.backgroundImage = "url(" + custom + ")";
-        document.body.style.backgroundRepeat = "none";
+        document.body.style.backgroundRepeat = "no-repeat";
         document.body.style.backgroundSize = "cover";
 
         closeoptions();

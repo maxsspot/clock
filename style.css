@@ -13,10 +13,12 @@ body {
 	background-color:black;
 }
 
-#customoptions {
-	width:300px;
+#customimage {
+	width:100%;
+	height:999vh;
 	background-color:#36454f;
-	border-radius:10px;
+	position:fixed;
+	margin:auto;
 	color:white;
 }
 

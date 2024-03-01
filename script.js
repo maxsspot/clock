@@ -330,8 +330,8 @@ function changeTxt () {
 
 var optionsPanel = document.getElementById ("customimage");
 function closeoptions () {
-    optionsPanel.style.opacity="0";
-    optionsPanel.style.pointerEvents = "none";
+    document.getElementById ("customimage").style.opacity="0";
+    document.getElementById ("customimage").style.pointerEvents = "none";
 }
 
 function urlupload () {

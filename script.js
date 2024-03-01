@@ -333,7 +333,7 @@ function custombg () {
 
     if (custom != null) {
         alert(custom);
-        document.body.style.background = "url(custom)";
+        document.body.style.background = "url(" + custom + ")";
         document.body.style.backgroundRepeat = "none";
         document.body.style.backgroundSize = "cover";
     }

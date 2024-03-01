@@ -16,6 +16,7 @@ body {
 hr {
 	width:100px;
 	background-color:white;
+	margin:auto;
 	border:white solid 1px;
 	border-radius:5px;
 }

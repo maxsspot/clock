@@ -10,13 +10,23 @@
 	</head>
 	<body>
         <!--<button id = "fsbutton" onclick = "fsidk()"><i class="fa-solid fa-expand fa-lg"></i></button>-->
+	<div id = "customimage">
+		<br>
+		<h3>Image Upload</h3>
+		<!--<label>Upload from URL: </label>--><button onclick = "urlupload()" class = "optionbuttons">Upload from URL</button><br>
+		<!--<label>Upload from FILE: </label><input type = "file" accept="image/*" style = "width:150px" />
+		<br>-->
+		<a onclick = "document.body.style.background = document.getElementById ('backgroundColor').value;closeoptions();localStorage.removeItem ('imageUrl');" style = "color:white;">Remove Image</a>
+		<hr>
+		<a id = "cancel" onclick = "closeoptions()" style = "color:white;">Cancel</a>
+	</div>
         <div id = "clock" onclick = "zoom()">
 		<h1 id = "time"></h1>
         	<div id = "section2"><h5 id = "day"><h5 id = "month"></h5><h5 id = "daynumber"></h5><h5 id = "year"></h5></h5></div>
 	</div>
 		
         <footer id = "styles">
-            	<label for = "fontChoice">Font:</label>
+            	<label for = "fontChoice">Font: </label>
 		<select id = "fontChoice" oninput = "changeFont()" value = "Nunito Sans">
 			<option value = "Nunito Sans" style = "font-family:'Nunito Sans', sans-serif;">Nunito Sans</option>
 			<option value = "Poppins" style = "font-family:'Poppins', sans-serif;">Poppins</option>
@@ -30,10 +40,14 @@
 			<option value = "Jost" style = "font-family:'Jost', sans-serif">Jost</option>
 		</select>
 		|
-		<label for = "backgroundColor">BG Color: </label>
+		<label for = "bgColor">BG Color: </label>
 		<input onchange = "changeBg()" id = "backgroundColor" type = "color" style = "transform:scale(0.8);"/>
+		
 		<label for = "textColor">Text Color: </label>
 		<input onchange = "changeTxt()" id = "textColor" type = "color" style = "transform:scale(0.8);" value = "#ffffff" />
+		|
+		<label for = "custombg">Custom BG: </label>
+		<button id = "custombg" onclick = "openoptions()">Custom BG</button>
         </footer>
 		
 	</body>

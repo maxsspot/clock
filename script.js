@@ -345,8 +345,9 @@ function closeoptions () {
     document.getElementById ("customimage").style.pointerEvents = "none";
 }
 
-var custom = prompt("Please enter the URL of your image.");
+var custom;
 function urlupload () {
+    custom = prompt("Please enter the URL of your image.");
     if (custom != null) {
         document.body.style.background = "url(" + custom + ")";
         document.body.style.backgroundRepeat = "none";

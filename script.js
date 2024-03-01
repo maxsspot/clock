@@ -339,7 +339,7 @@ function closeoptions () {
 }
 
 function urlupload () {
-    var custom = prompt("Please enter the URL of your image");
+    var custom = prompt("Please enter the URL of your image.");
 
     if (custom != null) {
         document.body.style.background = "url(" + custom + ")";

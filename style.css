@@ -13,6 +13,13 @@ body {
 	background-color:black;
 }
 
+hr {
+	width:100px;
+	background-color:white;
+	border:white solid 1px;
+	border-radius:5px;
+}
+
 .optionbuttons {
 	width:150px;
 	height:45px;

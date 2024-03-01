@@ -108,6 +108,7 @@ footer {
     overflow:auto;
     position:fixed;
     height:50px;
+    bottom:0px;
     background-color:black;
 }
 

@@ -107,7 +107,6 @@ footer {
     overflow-wrap:break-word;
     overflow:auto;
     position:fixed;
-    bottom:10px;
     height:50px;
     background-color:black;
 }

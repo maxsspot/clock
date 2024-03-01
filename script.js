@@ -328,7 +328,12 @@ function changeTxt () {
     localStorage.setItem ("clockColor",document.getElementById("textColor").value);
 }
 
-function custombg () {
+/*var options = document.getElementById ("customimage");
+function openoptions () {
+    options
+}*/
+
+function urlupload () {
     var custom = prompt("Please enter the URL of your image");
 
     if (custom != null) {

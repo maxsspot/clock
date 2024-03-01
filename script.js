@@ -330,7 +330,7 @@ function changeTxt () {
 
 function custombg () {
     var custom = prompt('Please insert the URL of your image.');
-    document.body.style.backgroundImage = "url(str(custom))";
+    document.body.style.background = "url('https://blog.udemy.com/wp-content/uploads/2014/05/bigstock-test-icon-63758263-300x300.jpg')";
 }
 
 ///////////////////

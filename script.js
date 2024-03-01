@@ -258,6 +258,7 @@ if (window.innerWidth <= 768) {
 } else {
   document.getElementById ("section2").style.fontSize = "35px";
   document.getElementById ("styles").style.scale = "1.0";
+  document.getElementById ("clock").style.transform = "scale(1.2)";
   var isMobile = false;
 }
 

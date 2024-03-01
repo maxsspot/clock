@@ -329,7 +329,7 @@ function changeTxt () {
 }
 
 var optionsPanel = document.getElementById ("customimage");
-function canceloptions () {
+function closeoptions () {
     optionsPanel.style.opacity="0";
     optionsPanel.style.pointerEvents = "none";
 }

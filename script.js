@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (loadedBgUrl) {
         document.body.style.background = "url(" + loadedBgUrl + ")";
-        document.body.style.backgroundSize = "cover";
+        document.body.style.backgroundSize = "100% 100%";
         document.body.style.backgroundRepeat = "no-repeat";
     }
 });

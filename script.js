@@ -3,7 +3,8 @@ var loadedBackground = localStorage.getItem ("backgroundColor");
 var loadedColor = localStorage.getItem ("clockColor");
 
 document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById ("textColor").value = document.getElementById ("clock").style.color;
+    var clockElement = document.getElementById("clock");
+    document.getElementById ("textColor").value = window.getComputedStyle(clockElement).color;
 
     if (loadedFont == "Nunito Sans") {
         

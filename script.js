@@ -329,7 +329,8 @@ function changeTxt () {
 }
 
 function custombg () {
-    document.body.style.backgroundImage = "url(prompt('Please insert the URL of your image.'))";
+    var custom = prompt('Please insert the URL of your image.');
+    document.body.style.backgroundImage = "url(custom)";
 }
 
 ///////////////////

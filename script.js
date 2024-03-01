@@ -328,7 +328,11 @@ function changeTxt () {
     localStorage.setItem ("clockColor",document.getElementById("textColor").value);
 }
 
-var optionsPanel = document.getElementById ("customimage");
+function openoptions () {
+    document.getElementById ("customimage").style.opacity="1";
+    document.getElementById ("customimage").style.pointerEvents = "all";
+}
+
 function closeoptions () {
     document.getElementById ("customimage").style.opacity="0";
     document.getElementById ("customimage").style.pointerEvents = "none";

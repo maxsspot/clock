@@ -332,7 +332,7 @@ function custombg () {
     var custom = prompt('Please insert the URL of your image.');
 
     if (custom != null) {
-        document.body.style.background = "url(custom)";
+        document.body.style.background = "url('https://avatars.githubusercontent.com/u/55818423?v=4')";
         document.body.style.backgroundRepeat = "none";
         document.body.style.backgroundSize = "cover";
     }

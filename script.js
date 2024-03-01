@@ -330,9 +330,7 @@ function changeTxt () {
 
 function custombg () {
     var custom = prompt('Please insert the URL of your image.');
-    if (custom == "") {
-        document.body.style.backgroundImage = str(custom);
-    }
+    document.body.style.backgroundImage = str(custom);
 }
 
 ///////////////////

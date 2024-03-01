@@ -329,10 +329,6 @@ function changeTxt () {
     localStorage.setItem ("clockColor",document.getElementById("textColor").value);
 }
 
-function hoverChange (fontFamily) {
-    document.getElementById ("clock").style.fontFamily = fontFamily;
-}
-
 ///////////////////
 
 function openUI () {

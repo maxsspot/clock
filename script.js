@@ -328,10 +328,10 @@ function changeTxt () {
     localStorage.setItem ("clockColor",document.getElementById("textColor").value);
 }
 
-var options = document.getElementById ("customimage");
+var optionsPanel = document.getElementById ("customimage");
 function canceloptions () {
-    options.style.opacity="0";
-    options.style.pointerEvents = "none";
+    optionsPanel.style.opacity="0";
+    optionsPanel.style.pointerEvents = "none";
 }
 
 function urlupload () {

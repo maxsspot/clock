@@ -1,6 +1,7 @@
 var loadedFont = localStorage.getItem ("loadFont");
 var loadedBackground = localStorage.getItem ("backgroundColor");
 var loadedColor = localStorage.getItem ("clockColor");
+var loadedBgUrl = localStorage.getItem ("imageUrl");
 
 document.addEventListener("DOMContentLoaded", function () {
     var clockElement = document.getElementById("clock");
@@ -76,6 +77,10 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById ("textColor").value = loadedColor;
 
     /////////
+
+    if (loadedBgUrl) {
+        document.body.style.background = "url(" + loadedBgUrl + ")";
+    }
 });
 
 setInterval(function() {

@@ -15,9 +15,9 @@
         	<div id = "section2"><h5 id = "day"><h5 id = "month"></h5><h5 id = "daynumber"></h5><h5 id = "year"></h5></h5></div>
 	</div>
 		
-        <footer>
+        <footer id = "styles">
             	<label for = "fontChoice">Font:</label>
-		<select id = "fontChoice" onchange = "changeFont()" value = "Nunito Sans">
+		<select id = "fontChoice" oninput = "changeFont()" value = "Nunito Sans">
 			<option value = "Nunito Sans" style = "font-family:'Nunito Sans', sans-serif;">Nunito Sans</option>
 			<option value = "Poppins" style = "font-family:'Poppins', sans-serif;">Poppins</option>
 			<option value = "DM Sans" style = "font-family:'DM Sans', sans-serif;">DM Sans</option>
@@ -29,6 +29,11 @@
 			<option value = "Archivo" style = "font-family:'Archivo', sans-serif;">Archivo</option>
 			<option value = "Jost" style = "font-family:'Jost', sans-serif">Jost</option>
 		</select>
+		|
+		<label for = "bgColor">BG Color: </label>
+		<input onchange = "changeBg()" id = "backgroundColor" type = "color" style = "transform:scale(0.8);"/>
+		<label for = "textColor">Text Color: </label>
+		<input onchange = "changeTxt()" id = "textColor" type = "color" style = "transform:scale(0.8);" value = "#ffffff" />
         </footer>
 		
 	</body>

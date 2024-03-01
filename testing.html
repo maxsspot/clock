@@ -15,7 +15,7 @@
 		<h3>Image Upload</h3>
 		<button onclick = "urlupload()" class = "optionbuttons">Upload from URL</button>
 		<br>
-		<a onclick = "document.body.style.background = document.getElementById ('backgroundColor').value;closeoptions();" style = "color:white;">Remove Image</a>
+		<a onclick = "document.body.style.background = document.getElementById ('backgroundColor').value;closeoptions();localStorage.removeItem ('imageUrl"');" style = "color:white;">Remove Image</a>
 		<hr>
 		<a id = "cancel" onclick = "closeoptions()" style = "color:white;">Cancel</a>
 	</div>

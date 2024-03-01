@@ -13,7 +13,8 @@
 	<div id = "customimage">
 		<br>
 		<h3>Image Upload</h3>
-		<button onclick = "urlupload()" class = "optionbuttons">Upload from URL</button>
+		<label>Upload from URL: </label><button onclick = "urlupload()" class = "optionbuttons">Upload from URL</button>
+		<label>Upload from FILE: </label><button class = "optionbuttons">Upload from FILE</button>
 		<br>
 		<a onclick = "document.body.style.background = document.getElementById ('backgroundColor').value;closeoptions();localStorage.removeItem ('imageUrl');" style = "color:white;">Remove Image</a>
 		<hr>

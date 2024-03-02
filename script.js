@@ -402,8 +402,8 @@ var isZoomed = false;
 function zoom () {
     if (!isMobile) {
         if (!isZoomed) {
-            document.getElementById ("time").style.fontSize = "55px";
-            document.getElementById ("section2").style.fontSize = "45px";
+            document.getElementById ("time").style.fontSize = "65px";
+            document.getElementById ("section2").style.fontSize = "65px";
             isZoomed=true;
         } else {
             document.getElementById ("time").style.fontSize = "50px";

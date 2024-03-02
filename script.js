@@ -2,6 +2,7 @@ var loadedFont = localStorage.getItem ("loadFont");
 var loadedBackground = localStorage.getItem ("backgroundColor");
 var loadedColor = localStorage.getItem ("clockColor");
 var loadedBgUrl = localStorage.getItem ("imageUrl");
+var loadedFileBg = localStorage.getItem ("fileBg");
 
 document.addEventListener("DOMContentLoaded", function () {
     var clockElement = document.getElementById("clock");
@@ -80,6 +81,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (loadedBgUrl) {
         document.body.style.background = "url(" + loadedBgUrl + ")";
+        document.body.style.backgroundSize = "cover";
+        document.body.style.backgroundRepeat = "no-repeat";
+    } else if (loadedFileBg) {
+        document.body.style.background = "url(" + loadedFileBg + ")";
         document.body.style.backgroundSize = "cover";
         document.body.style.backgroundRepeat = "no-repeat";
     }
@@ -362,6 +367,7 @@ function urlupload () {
 
 function saveUrlImage () {
     localStorage.setItem ("imageUrl",custom);
+    localStorage.removeItem ("fileBg");
 }
 
 var customImg;
@@ -379,6 +385,9 @@ function bgImgChange () {
 
         reader.readAsDataURL(customImg.files[0]);
 
+        localStorage.setItem ("fileBg",e.target.result);
+        localStorage.removeItem ("imageUrl");
+        
         closeoptions();
     }
 }

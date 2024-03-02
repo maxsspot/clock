@@ -375,7 +375,7 @@ function bgImgChange () {
             document.body.style.background = "url(" + e.target.result + ")";
         }
 
-        reader.readAsDataUrl(customImg.files[0]);
+        reader.readAsDataURL(customImg.files[0]);
 
         closeoptions();
     }

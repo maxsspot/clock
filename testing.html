@@ -16,7 +16,7 @@
 		<label>URL: </label><button onclick = "urlupload()" class = "optionbuttons">Upload from URL</button><br>
 		<label>FILE: </label><input class = "optionbuttons" id = "bgInputFile" type = "file" accept="image/*" onchange = "bgImgChange()" style = "width:150px" />
 		<br>
-		<a onclick = "document.body.style.background = document.getElementById ('backgroundColor').value;closeoptions();localStorage.removeItem ('imageUrl');" style = "color:white;">Remove Image</a>
+		<a onclick = "document.body.style.background = document.getElementById ('backgroundColor').value;closeoptions();localStorage.removeItem ('imageUrl');localStorage.removeItem('fileBg');" style = "color:white;">Remove Image</a>
 		<hr>
 		<a id = "cancel" onclick = "closeoptions()" style = "color:white;">Cancel</a>
 	</div>

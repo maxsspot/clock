@@ -259,11 +259,11 @@ var isMobile;
 if (window.innerWidth <= 768) {
   document.getElementById ("section2").style.fontSize = "29px";
   document.getElementById ("styles").style.scale = "0.8";
-  var isMobile = true;
+  isMobile = true;
 } else {
   document.getElementById ("section2").style.fontSize = "35px";
   document.getElementById ("styles").style.scale = "1.0";
-  var isMobile = false;
+  isMobile = false;
 }
 
 //////////////////

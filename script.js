@@ -373,11 +373,13 @@ function saveUrlImage () {
 var customImg;
 function bgImgChange () {
     customImg = document.getElementById ("bgInputFile");
-
+    var e;
+    
     if (customImg.files && customImg.files[0]) {
         var reader = new FileReader();
 
-        reader.onload = function(e) {
+        reader.onload = function(event) {
+            e = event;
             document.body.style.background = "url(" + e.target.result + ")";
             document.body.style.backgroundRepeat = "no-repeat";
             document.body.style.backgroundSize = "cover";

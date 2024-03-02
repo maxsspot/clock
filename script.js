@@ -408,6 +408,7 @@ function zoom () {
         } else {
             document.getElementById ("time").style.fontSize = "50px";
             document.getElementById ("section2").style.fontSize = "35px";
+            isZoomed=false;
         }
     }
 }

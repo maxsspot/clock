@@ -15,7 +15,7 @@ body {
 }
 
 #clock {
-	transition:all 0.5s;
+	transition:font-size 1s;
 }
 
 input::file-selector-button {

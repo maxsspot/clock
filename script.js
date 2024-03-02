@@ -376,6 +376,8 @@ function bgImgChange () {
         }
 
         reader.readAsDataUrl(input.files[0]);
+
+        closeoptions();
     }
 }
 

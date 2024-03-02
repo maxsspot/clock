@@ -4,6 +4,8 @@ var loadedColor = localStorage.getItem ("clockColor");
 var loadedBgUrl = localStorage.getItem ("imageUrl");
 var loadedFileBg = localStorage.getItem ("fileBg");
 
+var isMobile;
+
 document.addEventListener("DOMContentLoaded", function () {
     var clockElement = document.getElementById("clock");
 
@@ -255,7 +257,6 @@ if (hours < 12) {
 }
 
 ///////////////////
-var isMobile;
 if (window.innerWidth <= 768) {
   document.getElementById ("section2").style.fontSize = "29px";
   document.getElementById ("styles").style.scale = "0.8";

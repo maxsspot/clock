@@ -18,6 +18,8 @@ input::file-selector-button {
 	height:45px;
 	border-radius:10px;
 	background-color:transparent;
+	color:white;
+	width:150px;
 	border:white solid 1px;
 }
 

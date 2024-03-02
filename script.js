@@ -371,11 +371,14 @@ function saveUrlImage () {
 }
 
 var customImg;
+var camImg;
 function bgImgChange () {
     customImg = document.getElementById ("bgInputFile");
+    camImg = document.getElementById ("camInputFile");
+    
     var e;
     
-    if (customImg.files && customImg.files[0]) {
+    if (customImg.files && customImg.files[0] || camImg.files && camImg.files[0]) {
         var reader = new FileReader();
 
         reader.onload = function(event) {

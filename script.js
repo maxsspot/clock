@@ -364,6 +364,21 @@ function saveUrlImage () {
     localStorage.setItem ("imageUrl",custom);
 }
 
+var customImg;
+function bgImgChange () {
+    customImg = document.getElementById ("bgInputFile");
+
+    if (customImg.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function(e) {
+            document.body.style.background = "url(" + e.target.result + ")";
+        }
+
+        reader.readAsDataUrl(input.files[0]);
+    }
+}
+
 ///////////////////
 
 function openUI () {

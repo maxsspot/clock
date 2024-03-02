@@ -368,7 +368,7 @@ var customImg;
 function bgImgChange () {
     customImg = document.getElementById ("bgInputFile");
 
-    if (customImg.files && input.files[0]) {
+    if (customImg.files && customImg.files[0]) {
         var reader = new FileReader();
 
         reader.onload = function(e) {

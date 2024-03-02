@@ -14,7 +14,12 @@ body {
 	background-color:black;
 }
 
-
+input::file-selector-button {
+	height:50px;
+	border-radius:10px;
+	background-color:transparent;
+	border:white solid 1px;
+}
 
 hr {
 	width:100px;

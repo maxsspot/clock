@@ -397,14 +397,16 @@ function bgImgChange () {
 
 ///////////////////
 
-function openUI () {
-    document.getElementById ("ui").style.top = "10px";
-    document.getElementById ("ui").style.opacity = "1";
-    document.getElementById ("ui").style.pointerEvents = "all";
-}
-
-function closeUI () {
-    document.getElementById ("ui").style.top = "0px";
-    document.getElementById ("ui").style.opacity = "0";
-    document.getElementById ("ui").style.pointerEvents = "none";
+var isZoomed = false;
+function zoom () {
+    if (!isMobile) {
+        if (!isZoomed) {
+            document.getElementById ("time").style.fontSize = "55px";
+            document.getElementById ("section2").style.fontSize = "45px";
+            isZoomed=true;
+        } else {
+            document.getElementById ("time").style.fontSize = "50px";
+            document.getElementById ("section2").style.fontSize = "35px";
+        }
+    }
 }

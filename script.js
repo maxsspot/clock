@@ -373,6 +373,8 @@ function bgImgChange () {
 
         reader.onload = function(e) {
             document.body.style.background = "url(" + e.target.result + ")";
+            document.body.style.backgroundRepeat = "no-repeat";
+            document.body.style.backgroundSize = "cover";
         }
 
         reader.readAsDataURL(customImg.files[0]);

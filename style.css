@@ -29,6 +29,10 @@ input[type="file"] {
 	cursor:pointer;
 }
 
+h1 {
+	font-size:2em;
+}
+
 hr {
 	width:100px;
 	background-color:white;

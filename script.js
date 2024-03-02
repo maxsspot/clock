@@ -386,11 +386,11 @@ function bgImgChange () {
 
             localStorage.setItem("fileBg", e.target.result);
             localStorage.removeItem("imageUrl");
+
+            closeoptions();
         }
 
         reader.readAsDataURL(customImg.files[0]);
-
-        closeoptions();
     }
 }
 

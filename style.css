@@ -21,6 +21,7 @@ input::file-selector-button {
 	color:white;
 	width:150px;
 	border:white solid 1px;
+	cursor:pointer;
 }
 
 input[type="file"] {

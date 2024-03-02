@@ -402,11 +402,11 @@ var isZoomed = false;
 function zoom () {
     if (!isMobile) {
         if (!isZoomed) {
-            document.getElementById ("time").style.fontSize = "3em";
+            document.getElementById ("time").style.fontSize = "2.5em";
             document.getElementById ("section2").style.fontSize = "2em";
             isZoomed=true;
         } else {
-            document.getElementById ("time").style.fontSize = "50px";
+            document.getElementById ("time").style.fontSize = "2em";
             document.getElementById ("section2").style.fontSize = "35px";
             isZoomed=false;
         }

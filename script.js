@@ -257,6 +257,7 @@ if (hours < 12) {
 }
 
 ///////////////////
+if (!izZoomed) {
 if (window.innerWidth <= 768) {
   document.getElementById ("section2").style.fontSize = "29px";
   document.getElementById ("styles").style.scale = "0.8";
@@ -266,7 +267,7 @@ if (window.innerWidth <= 768) {
   document.getElementById ("styles").style.scale = "1.0";
   isMobile = false;
 }
-
+}
 //////////////////
 
 }, 1);

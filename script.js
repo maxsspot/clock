@@ -383,13 +383,13 @@ function bgImgChange () {
             document.body.style.background = "url(" + e.target.result + ")";
             document.body.style.backgroundRepeat = "no-repeat";
             document.body.style.backgroundSize = "cover";
+
+            localStorage.setItem("fileBg", e.target.result);
+            localStorage.removeItem("imageUrl");
         }
 
         reader.readAsDataURL(customImg.files[0]);
 
-        localStorage.setItem ("fileBg",e.target.result);
-        localStorage.removeItem ("imageUrl");
-        
         closeoptions();
     }
 }

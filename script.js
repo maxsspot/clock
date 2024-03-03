@@ -178,6 +178,9 @@ switch (hours) {
 // Shows day of week 
 
 switch (day) {
+    case 0:
+        dayText.innerHTML = "Sunday,";
+        break;
     case 1:
         dayText.innerHTML = "Monday,";
         break;
@@ -195,9 +198,6 @@ switch (day) {
         break;
     case 6:
         dayText.innerHTML = "Saturday,";
-        break;
-    case 7:
-        dayText.innerHTML = "Sunday,";
         break;
 }
 

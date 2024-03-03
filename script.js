@@ -398,7 +398,7 @@ function bgImgChange () {
 }
 
 ///////////////////
-
+/*
 var isZoomed = false;
 function zoom () {
     if (!isMobile) {
@@ -413,3 +413,4 @@ function zoom () {
         }
     }
 }
+*/

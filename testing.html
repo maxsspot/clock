@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+        <script src = "script.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Montserrat&family=Nunito+Sans&family=Poppins&family=Inconsolata&family=Roboto&family=Hind&family=PT+Sans&family=Archivo&family=Jost&display=swap" rel="stylesheet">
+		<title>Page Title</title>
+	</head>
+	<body>
+        <!--<button id = "fsbutton" onclick = "fsidk()"><i class="fa-solid fa-expand fa-lg"></i></button>-->
+	<div id = "customimage">
+		<br>
+		<h3>Image Upload</h3>
+		<label>URL: </label><button onclick = "urlupload()" class = "optionbuttons">Upload from URL</button><br>
+		<label>FILE: </label><input class = "optionbuttons" id = "bgInputFile" type = "file" accept="image/*" onchange = "bgImgChange()" style = "width:150px" />
+		<br>
+		<a onclick = "document.body.style.background = document.getElementById ('backgroundColor').value;closeoptions();localStorage.removeItem ('imageUrl');localStorage.removeItem('fileBg');" style = "color:white;">Remove Image</a>
+		<hr>
+		<a id = "cancel" onclick = "closeoptions()" style = "color:white;">Cancel</a>
+	</div>
+        <div id = "clock">
+		<h1 id = "time"></h1>
+        	<div id = "section2"><h5 id = "day"><h5 id = "month"></h5><h5 id = "daynumber"></h5><h5 id = "year"></h5></h5></div>
+	</div>
+		
+        <footer id = "styles">
+            	<label for = "fontChoice">Font: </label>
+		<select id = "fontChoice" oninput = "changeFont()" value = "Nunito Sans">
+			<option value = "Nunito Sans" style = "font-family:'Nunito Sans', sans-serif;">Nunito Sans</option>
+			<option value = "Poppins" style = "font-family:'Poppins', sans-serif;">Poppins</option>
+			<option value = "DM Sans" style = "font-family:'DM Sans', sans-serif;">DM Sans</option>
+			<option value = "Montserrat" style = "font-family:'Montserrat', sans-serif;">Montserrat</option>
+			<option value = "Inconsolata" style = "font-family:'Inconsolata', sans-serif;">Inconsolata</option>
+			<option value = "Roboto" style = "font-family:'Roboto', sans-serif;">Roboto</option>
+			<option value = "Hind" style = "font-family:'Hind', sans-serif;">Hind</option>
+			<option value = "PT Sans" style = "font-family:'PT Sans', sans-serif;">PT Sans</option>
+			<option value = "Archivo" style = "font-family:'Archivo', sans-serif;">Archivo</option>
+			<option value = "Jost" style = "font-family:'Jost', sans-serif">Jost</option>
+		</select>
+		|
+		<label for = "backgroundColor">BG Color: </label>
+		<input onchange = "changeBg()" id = "backgroundColor" type = "color" style = "transform:scale(0.8);"/>
+		
+		<label for = "textColor">Text Color: </label>
+		<input onchange = "changeTxt()" id = "textColor" type = "color" style = "transform:scale(0.8);" value = "#ffffff" />
+		|
+		<label for = "custombg">Custom BG: </label>
+		<button id = "custombg" onclick = "openoptions()">Custom BG</button>
+    |
+    <label for = "textShadow">Text Shadow</label>
+    <select id = "textShadow">
+      <option value = "None">None</option>
+      <option value = "Light">Light</option>
+      <option value = "Normal">Normal</option>
+      <option value = "Bold">Bold</option>
+    </select>
+        </footer>
+		
+	</body>
+</html>

@@ -258,7 +258,8 @@ if (hours < 12) {
     document.title = hours-12 + ":" + minutes + ":" + seconds + " PM";
 }
 
-/////////////////// /*
+/////////////////// 
+    /*
 if (!izZoomed) {
 if (window.innerWidth <= 768) {
   document.getElementById ("section2").style.fontSize = "29px";

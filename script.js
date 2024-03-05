@@ -401,7 +401,7 @@ function bgImgChange () {
 
 ///////////////////
 
-var choice = document.getEllementById ("textShadow");
+var choice = document.getElementById ("textShadow");
 function changeShadow () {
     if (choice.value == "Light") {
         clockElement.style.textShadow = "3px 3px" + clockElement.style.color;

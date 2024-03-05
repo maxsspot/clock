@@ -6,8 +6,10 @@ var loadedFileBg = localStorage.getItem ("fileBg");
 
 var isMobile;
 
+var clockElement = document.getElementById("clock");
+
 document.addEventListener("DOMContentLoaded", function () {
-    var clockElement = document.getElementById("clock");
+    
 
     if (loadedFont == "Nunito Sans") {
         

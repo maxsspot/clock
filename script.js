@@ -404,9 +404,11 @@ function bgImgChange () {
 ///////////////////
 
 var choice = document.getElementById ("textShadow");
+var clockElement = document.getElementById("clock");
+
 function changeShadow () {
-    if (document.getElementById("textShadow").value == "Light") {
-        document.getElementById("clock").style.textShadow = "15px 15px" + document.getElementById("clock").style.color;
+    if (clockElement.value == "Light") {
+       clockElement.style.textShadow = "15px 15px 0 " + clockElement.style.color;
     }
 }
 

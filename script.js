@@ -398,6 +398,16 @@ function bgImgChange () {
 }
 
 ///////////////////
+
+var choice = document.getEllementById ("textShadow");
+function changeShadow () {
+    if (choice.value == "Light") {
+        clockElement.style.textShadow = "3px 3px" + clockElement.style.color;
+    }
+}
+
+///////////////////
+
 /*
 var isZoomed = false;
 function zoom () {

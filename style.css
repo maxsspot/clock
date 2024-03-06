@@ -21,6 +21,8 @@ body {
 	background-color:transparent;
 	border:transparent;
 	border-bottom:black solid 1px;
+	margin:0;
+	padding:0;
 }
 
 #stopwatchb:hover {

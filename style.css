@@ -1,6 +1,7 @@
 * {
     margin:0;
     padding:0;  
+    outline:none;
 }
 
 body {
@@ -12,6 +13,22 @@ body {
 	transition:all 0.5s;
 	height:100vh;
 	background-color:black;
+}
+
+#stopwatchb, #timerb {
+	width:100px;
+	height:50px;
+	background-color:transparent;
+	border:transparent;
+	border-bottom:black solid 1px;
+}
+
+#stopwatchb:hover {
+	border-bottom:green solid 1px;
+}
+
+#timerb:hover {
+	border-bottom:green solid 1px;
 }
 
 #clock {
